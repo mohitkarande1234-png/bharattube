@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { supabase } from "./supabase";
 import Auth from "./components/Auth.jsx";
-import Upload from "./components/Upload.jsx";
+import Upload from "./components/upload.jsx";
 import Channel from "./components/Channel.jsx";
 import Shorts from "./components/Shorts.jsx";
 import Notifications from "./components/Notifications.jsx";

@@ -6,6 +6,7 @@ import Channel from "./components/Channel.jsx";
 import Shorts from "./components/Shorts.jsx";
 import Notifications from "./components/Notifications.jsx";
 import Profile from "./components/Profile.jsx";
+import Monetization from "./components/Monetization.jsx";
 import "./App.css";
 
 function App() {
@@ -1265,6 +1266,15 @@ function App() {
       return <ProfilePage />;
     }
 
+    if (page === "monetization") {
+      return (
+        <Monetization
+          user={user}
+          onBack={() => setPage("home")}
+        />
+      );
+    }
+
     if (page === "notifications") {
       return (
         <Notifications
@@ -1633,6 +1643,20 @@ function App() {
             >
               <span>👤</span>
               Your Profile
+            </button>
+
+            <button
+              className={
+                page === "monetization"
+                  ? "sidebar-item active"
+                  : "sidebar-item"
+              }
+              onClick={() =>
+                setPage("monetization")
+              }
+            >
+              <span>💰</span>
+              Monetization
             </button>
 
             <div className="sidebar-bottom">

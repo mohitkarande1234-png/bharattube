@@ -1,0 +1,132 @@
+.monetization-page {
+  padding: 30px;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.monetization-header {
+  margin-bottom: 25px;
+}
+
+.monetization-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.monetization-header p {
+  color: #9ca3af;
+}
+
+.earnings-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.earning-card {
+  background: #111827;
+  border: 1px solid #252a3a;
+  border-radius: 16px;
+  padding: 22px;
+}
+
+.earning-card span {
+  font-size: 28px;
+}
+
+.earning-card h3 {
+  font-size: 14px;
+  color: #9ca3af;
+  margin: 12px 0 8px;
+}
+
+.earning-card strong {
+  font-size: 25px;
+}
+
+.monetization-box {
+  background: #111827;
+  border: 1px solid #252a3a;
+  border-radius: 18px;
+  padding: 25px;
+  margin-bottom: 25px;
+}
+
+.monetization-box h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.monetization-box > p {
+  color: #9ca3af;
+  line-height: 1.6;
+}
+
+.requirements {
+  margin: 20px 0;
+}
+
+.requirements div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+}
+
+.requirements span {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #16a34a;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+.requirements p {
+  margin: 0;
+  color: #d1d5db;
+}
+
+.monetization-button {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #ff6b00, #ff3d68);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.empty-earnings {
+  text-align: center;
+  padding: 40px 20px;
+  color: #9ca3af;
+}
+
+.empty-earnings div {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.empty-earnings h3 {
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .earnings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .monetization-page {
+    padding: 18px;
+  }
+
+  .earnings-grid {
+    grid-template-columns: 1fr;
+  }
+}
